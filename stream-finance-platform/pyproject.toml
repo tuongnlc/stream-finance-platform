@@ -3,7 +3,16 @@ name = "stream-finance-platform"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.10"
 dependencies = [
-    "beautifulsoup4>=4.14.3",
+    "apache-flink>=2.2.1",
+    "authlib>=1.7.2",
+    "bs4>=0.0.2",
+    "cachetools>=7.1.4",
+    "confluent-kafka>=2.14.2",
+    "dotenv>=0.9.9",
+    "httpx>=0.28.1",
 ]
+
+[tool.uv.extra-build-dependencies]
+apache-beam = ["setuptools<70.0.0"]

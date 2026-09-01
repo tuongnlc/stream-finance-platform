@@ -1,0 +1,11 @@
+{
+  "namespace": "com.example",
+  "type": "record",
+  "name": "ForumUrl",
+  "fields": [
+    {"name": "url", "type": "string"},
+    {"name": "crawl_status", "type": "string"},
+    { "name": "error_message", "type": ["null", "string"], "default": null },
+    { "name": "updated_at", "type": "long" }
+  ]
+}
